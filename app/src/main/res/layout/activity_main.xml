@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioPoupanca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conta Poupança" />
+
+        <RadioButton
+            android:id="@+id/radioEspecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conta Especial" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacar"
+        android:layout_below="@id/btnCriarConta"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDepositar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depositar"
+        android:layout_below="@id/btnSacar"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCalcularRendimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Rendimento"
+        android:layout_below="@id/btnDepositar"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
